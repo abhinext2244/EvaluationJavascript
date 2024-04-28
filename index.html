@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <h2 style="text-align: center;"> Employee Management System</h2>
+        <div class="filter">
+        <div>Filter By Department:
+            <select name="" id="department">
+                <option value="Select Department">Select Department</option>
+                <option value="hr">hr</option>
+                <option value="finance">finance</option>
+                <option value="marketing"> marketing</option>
+                <option value="engineering"> engineering</option>
+                <option value="operations">operations</option>
+            </select>
+        </div>
+        <div>Filter By Gender:
+            <select name="" id="Gender">
+                <option value="Select Gender">Select Gender</option>
+                <option value="Female">Female</option>
+                <option value="Male">Male</option>
+            </select>
+        </div>
+        <div>Sort By Salary:
+            <select name="" id="Price">
+                <option value="HightoLow"id="HightoLow" >High to Low</option>
+                <option value="LowtoHigh" id="LowtoHigh">Low to High</option>
+            </select>
+        </div>
+    </div>
+    <div class="tabledata">
+        <table>
+            <thead>
+                <th>S.no:</th>
+                <th>Name:</th>
+                <th>Gender</th>
+                <th>Department</th>
+                <th>Salary</th>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+    <div class="btn">
+        <button id="prev">Pre</button>
+        <button id="Next">Next</button>
+    </div>
+    </div>
+</body>
+</html>
+<script src="index.js"></script>
