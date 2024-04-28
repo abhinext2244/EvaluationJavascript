@@ -3,7 +3,8 @@ fetch(
 )
   .then((res) => res.json())
   .then((data) => {
-    console.log(data.data);
+    console.log(data.totalPages);
+
     DisplayTable(data.data);
   });
 let tbody = document.querySelector("tbody");
@@ -174,4 +175,14 @@ price.addEventListener("click",function(){
           DisplayTable(data.data)
         });
     }
+})
+let next=document.querySelector("#Next")
+next.addEventListener("click",function(){
+    fetch(`https://dbioz2ek0e.execute-api.ap-south-1.amazonaws.com/mockapi/get-employees?page=1&limit=10`)
+    .then(res=>res.json())
+    .then((data)=>{
+
+        tbody.innerHTML=null
+        DisplayTable(data.data)
+    })
 })
